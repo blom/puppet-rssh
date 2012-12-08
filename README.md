@@ -1,6 +1,8 @@
 puppet-rssh
 ===========
 
+[![Build Status](https://travis-ci.org/blom/puppet-rssh.png)](https://travis-ci.org/blom/puppet-rssh)
+
 Puppet module for installing and configuring [rssh][1].
 
 Usage
