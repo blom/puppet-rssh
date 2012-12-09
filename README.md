@@ -5,6 +5,11 @@ puppet-rssh
 
 Puppet module for installing and configuring [rssh][1].
 
+Installation
+------------
+
+    puppet module install blom/rssh
+
 Usage
 -----
 
