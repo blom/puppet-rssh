@@ -3,7 +3,9 @@ require "spec_helper"
 describe "rssh" do
   let(:config_file) { "/etc/rssh.conf" }
 
-  it { should contain_package("rssh").with_ensure("installed") }
+  it { should contain_package("rssh").
+              with_ensure("installed").
+              with_before(%r[^File.*#{config_file}]) }
   it { should contain_file(config_file).
               with_ensure("present").
               with_mode("0644") }
@@ -16,6 +18,8 @@ describe "rssh" do
 
     context "when config_file is '/usr/local/etc/rssh.conf'" do
       let(:params) { {:config_file => "/usr/local/etc/rssh.conf"} }
+      it { should contain_package("rssh").
+                  with_before(%r[^File.*/usr/local/etc/rssh.conf]) }
       it { should contain_file("/usr/local/etc/rssh.conf") }
     end
 

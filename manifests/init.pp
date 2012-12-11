@@ -11,6 +11,7 @@ class rssh(
 ) {
   package { $package:
     ensure => installed,
+    before => File[$config_file],
   }
 
   file { $config_file:
