@@ -7,7 +7,7 @@ class rssh(
   $umask       = '022',
   $logfacility = 'LOG_USER',
   $chrootpath  = false,
-  $users       = [],
+  $users       = []
 ) {
   package { $package:
     ensure => installed,
