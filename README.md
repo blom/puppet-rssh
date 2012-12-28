@@ -28,11 +28,11 @@ Defined parameters and their defaults:
 
 `allow` takes an array:
 
-    allow => [ 'scp', 'sftp', 'cvs', 'rdist', 'rsync', 'svnserve' ]
+    allow => ['scp', 'sftp', 'cvs', 'rdist', 'rsync', 'svnserve']
 
 As does `users`:
 
-    users => [ 'foo:011:000100', 'bar:011:000100' ]
+    users => ['foo:011:000100', 'bar:011:000100']
 
 See `rssh.conf(5)` for more information.
 
