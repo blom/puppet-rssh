@@ -3,6 +3,9 @@ puppet-rssh
 
 [![Build Status](https://secure.travis-ci.org/blom/puppet-rssh.png)](https://travis-ci.org/blom/puppet-rssh)
 
+* [Homepage](https://github.com/blom/puppet-rssh)
+* [Puppet Forge](https://forge.puppetlabs.com/blom/rssh)
+
 Puppet module for installing and configuring [rssh][1].
 
 Installation
