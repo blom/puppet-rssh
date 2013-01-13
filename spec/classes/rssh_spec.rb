@@ -10,6 +10,13 @@ describe "rssh" do
               with_ensure("present").
               with_mode("0644") }
 
+  context "default configuration file" do
+    it { should contain_file(config_file).
+                with_content(/^umask = 022$/) }
+    it { should contain_file(config_file).
+                with_content(/^logfacility = LOG_USER$/) }
+  end
+
   context "parameters" do
     context "when package is 'rssh_xyz'" do
       let(:params) { {:package => "rssh_xyz"} }
