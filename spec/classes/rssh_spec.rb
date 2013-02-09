@@ -4,7 +4,7 @@ describe "rssh" do
   let(:config_file) { "/etc/rssh.conf" }
 
   it { should contain_package("rssh").
-              with_ensure("installed").
+              with_ensure("present").
               with_before(%r[^File.*#{config_file}]) }
   it { should contain_file(config_file).
               with_ensure("present").
