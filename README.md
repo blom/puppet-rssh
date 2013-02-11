@@ -1,7 +1,7 @@
 puppet-rssh
 ===========
 
-[![Build Status](https://secure.travis-ci.org/blom/puppet-rssh.png)](https://travis-ci.org/blom/puppet-rssh)
+[![Build Status](https://travis-ci.org/blom/puppet-rssh.png)](https://travis-ci.org/blom/puppet-rssh)
 
 * [Homepage](https://github.com/blom/puppet-rssh)
 * [Puppet Forge](https://forge.puppetlabs.com/blom/rssh)
