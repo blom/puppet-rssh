@@ -6,7 +6,7 @@ puppet-rssh
 * [Homepage](https://github.com/blom/puppet-rssh)
 * [Puppet Forge](https://forge.puppetlabs.com/blom/rssh)
 
-Puppet module for installing and configuring [rssh][1].
+Puppet module for [rssh][1].
 
 Installation
 ------------
@@ -16,18 +16,19 @@ Installation
 Usage
 -----
 
-    class { 'rssh': }
+    class { 'rssh':
+    }
 
-Defined parameters and their defaults:
+Takes the following optional attributes:
 
-    package      'rssh'
-    config_file  '/etc/rssh.conf'
-    config_mode  '0644'
-    allow        []
-    umask        '022'
-    logfacility  'LOG_USER'
-    chrootpath   false
-    users        []
+* `package`: Package name (default: `rssh`).
+* `config_file`: Configuration file path (default: `/etc/rssh.conf`).
+* `config_mode`: Configuration file mode (default: `0644`).
+* `allow`: Allowed commands (default `[]`).
+* `umask`: umask value for scp and sftp (default: `022`).
+* `logfacility`: Syslog facility that rssh logs to (default: `LOG_USER`).
+* `chrootpath`: `chroot()` path for users (default: `false`).
+* `users`: Options for specific users (default: `[]`).
 
 `allow` takes an array:
 
@@ -37,6 +38,7 @@ As does `users`:
 
     users => ['foo:011:000100', 'bar:011:000100']
 
-See `rssh.conf(5)` for more information.
+See [`rssh.conf(5)`][2] for more information.
 
 [1]: http://www.pizzashack.org/rssh/
+[2]: http://manpages.ubuntu.com/manpages/en/man5/rssh.conf.5.html
