@@ -1,11 +1,11 @@
-<%- allow.each do |a| -%>
+<%- @allow.each do |a| -%>
 <%= "allow#{a}" %>
 <%- end -%>
 
-<%= "umask = #{umask}" if umask %>
-<%= "logfacility = #{logfacility}" if logfacility %>
-<%= "chrootpath = #{chrootpath}" if chrootpath %>
+<%= "umask = #{@umask}" if @umask %>
+<%= "logfacility = #{@logfacility}" if @logfacility %>
+<%= "chrootpath = #{@chrootpath}" if @chrootpath %>
 
-<%- users.each do |user| -%>
+<%- @users.each do |user| -%>
 <%= %(user = "#{user}") %>
 <%- end -%>
