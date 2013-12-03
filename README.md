@@ -11,7 +11,13 @@ Puppet module for [rssh][1].
 Installation
 ------------
 
+### Puppet Forge
+
     puppet module install blom/rssh
+
+### Puppetfile
+
+    mod "rssh", :git => "https://github.com/blom/puppet-rssh.git"
 
 Usage
 -----
