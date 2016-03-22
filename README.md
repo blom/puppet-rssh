@@ -1,23 +1,25 @@
 puppet-rssh
 ===========
 
-[![Build Status](https://travis-ci.org/blom/puppet-rssh.png)](https://travis-ci.org/blom/puppet-rssh)
+[![Build Status](https://travis-ci.org/rcalixte/puppet-rssh.png)](https://travis-ci.org/blom/puppet-rssh)
 
-* [Homepage](https://github.com/blom/puppet-rssh)
-* [Puppet Forge](https://forge.puppetlabs.com/blom/rssh)
+* [Homepage](https://github.com/rcalixte/puppet-rssh)
+* [Puppet Forge](https://forge.puppetlabs.com/rcalixte/rssh)
+* [Original Homepage](https://github.com/blom/puppet-rssh)
+* [Original Puppet Forge](https://forge.puppetlabs.com/blom/rssh)
 
-Puppet module for [rssh][1].
+Puppet module for [rssh][1] (updated for Puppet 3.8).
 
 Installation
 ------------
 
 ### Puppet Forge
 
-    puppet module install blom/rssh
+    puppet module install rcalixte/rssh
 
 ### Puppetfile
 
-    mod "rssh", :git => "https://github.com/blom/puppet-rssh.git"
+    mod "rssh", :git => "https://github.com/rcalixte/puppet-rssh.git"
 
 Usage
 -----
